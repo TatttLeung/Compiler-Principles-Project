@@ -1,0 +1,912 @@
+SLRUnit
+{
+    Key: ID
+    Value: s1
+    Key: assign-stmt
+    Value: 2
+    Key: if
+    Value: s3
+    Key: if-stmt
+    Value: 4
+    Key: read
+    Value: s5
+    Key: read-stmt
+    Value: 6
+    Key: repeat
+    Value: s7
+    Key: repeat-stmt
+    Value: 8
+    Key: statement
+    Value: 9
+    Key: stmt-sequence
+    Value: 10
+    Key: write
+    Value: s11
+    Key: write-stmt
+    Value: 12
+}
+SLRUnit
+{
+    Key: ASSIGN
+    Value: s13
+}
+SLRUnit
+{
+    Key: $
+    Value: r(statement->assign-stmt)
+    Key: SEMI
+    Value: r(statement->assign-stmt)
+    Key: else
+    Value: r(statement->assign-stmt)
+    Key: end
+    Value: r(statement->assign-stmt)
+    Key: until
+    Value: r(statement->assign-stmt)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: exp
+    Value: 40
+    Key: factor
+    Value: 18
+    Key: simple-exp
+    Value: 19
+    Key: term
+    Value: 20
+}
+SLRUnit
+{
+    Key: $
+    Value: r(statement->if-stmt)
+    Key: SEMI
+    Value: r(statement->if-stmt)
+    Key: else
+    Value: r(statement->if-stmt)
+    Key: end
+    Value: r(statement->if-stmt)
+    Key: until
+    Value: r(statement->if-stmt)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s43
+}
+SLRUnit
+{
+    Key: $
+    Value: r(statement->read-stmt)
+    Key: SEMI
+    Value: r(statement->read-stmt)
+    Key: else
+    Value: r(statement->read-stmt)
+    Key: end
+    Value: r(statement->read-stmt)
+    Key: until
+    Value: r(statement->read-stmt)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s1
+    Key: assign-stmt
+    Value: 2
+    Key: if
+    Value: s3
+    Key: if-stmt
+    Value: 4
+    Key: read
+    Value: s5
+    Key: read-stmt
+    Value: 6
+    Key: repeat
+    Value: s7
+    Key: repeat-stmt
+    Value: 8
+    Key: statement
+    Value: 9
+    Key: stmt-sequence
+    Value: 44
+    Key: write
+    Value: s11
+    Key: write-stmt
+    Value: 12
+}
+SLRUnit
+{
+    Key: $
+    Value: r(statement->repeat-stmt)
+    Key: SEMI
+    Value: r(statement->repeat-stmt)
+    Key: else
+    Value: r(statement->repeat-stmt)
+    Key: end
+    Value: r(statement->repeat-stmt)
+    Key: until
+    Value: r(statement->repeat-stmt)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(stmt-sequence->statement)
+    Key: SEMI
+    Value: r(stmt-sequence->statement)
+    Key: else
+    Value: r(stmt-sequence->statement)
+    Key: end
+    Value: r(stmt-sequence->statement)
+    Key: until
+    Value: r(stmt-sequence->statement)
+}
+SLRUnit
+{
+    Key: $
+    Value: ACCEPT
+    Key: SEMI
+    Value: s45
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: exp
+    Value: 48
+    Key: factor
+    Value: 18
+    Key: simple-exp
+    Value: 19
+    Key: term
+    Value: 20
+}
+SLRUnit
+{
+    Key: $
+    Value: r(statement->write-stmt)
+    Key: SEMI
+    Value: r(statement->write-stmt)
+    Key: else
+    Value: r(statement->write-stmt)
+    Key: end
+    Value: r(statement->write-stmt)
+    Key: until
+    Value: r(statement->write-stmt)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: exp
+    Value: 17
+    Key: factor
+    Value: 18
+    Key: simple-exp
+    Value: 19
+    Key: term
+    Value: 20
+}
+SLRUnit
+{
+    Key: $
+    Value: r(factor->ID)
+    Key: DIVIDE
+    Value: r(factor->ID)
+    Key: EQ
+    Value: r(factor->ID)
+    Key: LT
+    Value: r(factor->ID)
+    Key: LTEQ
+    Value: r(factor->ID)
+    Key: MINUS
+    Value: r(factor->ID)
+    Key: MOD
+    Value: r(factor->ID)
+    Key: MULTIPLY
+    Value: r(factor->ID)
+    Key: NE
+    Value: r(factor->ID)
+    Key: PLUS
+    Value: r(factor->ID)
+    Key: RPAN
+    Value: r(factor->ID)
+    Key: RT
+    Value: r(factor->ID)
+    Key: RTEQ
+    Value: r(factor->ID)
+    Key: SEMI
+    Value: r(factor->ID)
+    Key: else
+    Value: r(factor->ID)
+    Key: end
+    Value: r(factor->ID)
+    Key: then
+    Value: r(factor->ID)
+    Key: until
+    Value: r(factor->ID)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: exp
+    Value: 21
+    Key: factor
+    Value: 18
+    Key: simple-exp
+    Value: 19
+    Key: term
+    Value: 20
+}
+SLRUnit
+{
+    Key: $
+    Value: r(factor->NUMBER)
+    Key: DIVIDE
+    Value: r(factor->NUMBER)
+    Key: EQ
+    Value: r(factor->NUMBER)
+    Key: LT
+    Value: r(factor->NUMBER)
+    Key: LTEQ
+    Value: r(factor->NUMBER)
+    Key: MINUS
+    Value: r(factor->NUMBER)
+    Key: MOD
+    Value: r(factor->NUMBER)
+    Key: MULTIPLY
+    Value: r(factor->NUMBER)
+    Key: NE
+    Value: r(factor->NUMBER)
+    Key: PLUS
+    Value: r(factor->NUMBER)
+    Key: RPAN
+    Value: r(factor->NUMBER)
+    Key: RT
+    Value: r(factor->NUMBER)
+    Key: RTEQ
+    Value: r(factor->NUMBER)
+    Key: SEMI
+    Value: r(factor->NUMBER)
+    Key: else
+    Value: r(factor->NUMBER)
+    Key: end
+    Value: r(factor->NUMBER)
+    Key: then
+    Value: r(factor->NUMBER)
+    Key: until
+    Value: r(factor->NUMBER)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(assign-stmt->ID ASSIGN exp)
+    Key: SEMI
+    Value: r(assign-stmt->ID ASSIGN exp)
+    Key: else
+    Value: r(assign-stmt->ID ASSIGN exp)
+    Key: end
+    Value: r(assign-stmt->ID ASSIGN exp)
+    Key: until
+    Value: r(assign-stmt->ID ASSIGN exp)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(term->factor)
+    Key: DIVIDE
+    Value: r(term->factor)
+    Key: EQ
+    Value: r(term->factor)
+    Key: LT
+    Value: r(term->factor)
+    Key: LTEQ
+    Value: r(term->factor)
+    Key: MINUS
+    Value: r(term->factor)
+    Key: MOD
+    Value: r(term->factor)
+    Key: MULTIPLY
+    Value: r(term->factor)
+    Key: NE
+    Value: r(term->factor)
+    Key: PLUS
+    Value: r(term->factor)
+    Key: RPAN
+    Value: r(term->factor)
+    Key: RT
+    Value: r(term->factor)
+    Key: RTEQ
+    Value: r(term->factor)
+    Key: SEMI
+    Value: r(term->factor)
+    Key: else
+    Value: r(term->factor)
+    Key: end
+    Value: r(term->factor)
+    Key: then
+    Value: r(term->factor)
+    Key: until
+    Value: r(term->factor)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(exp->simple-exp)
+    Key: EQ
+    Value: s23
+    Key: LT
+    Value: s24
+    Key: LTEQ
+    Value: s25
+    Key: MINUS
+    Value: s26
+    Key: NE
+    Value: s27
+    Key: PLUS
+    Value: s28
+    Key: RPAN
+    Value: r(exp->simple-exp)
+    Key: RT
+    Value: s29
+    Key: RTEQ
+    Value: s30
+    Key: SEMI
+    Value: r(exp->simple-exp)
+    Key: addop
+    Value: 31
+    Key: comparison-op
+    Value: 32
+    Key: else
+    Value: r(exp->simple-exp)
+    Key: end
+    Value: r(exp->simple-exp)
+    Key: then
+    Value: r(exp->simple-exp)
+    Key: until
+    Value: r(exp->simple-exp)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(simple-exp->term)
+    Key: DIVIDE
+    Value: s34
+    Key: EQ
+    Value: r(simple-exp->term)
+    Key: LT
+    Value: r(simple-exp->term)
+    Key: LTEQ
+    Value: r(simple-exp->term)
+    Key: MINUS
+    Value: r(simple-exp->term)
+    Key: MOD
+    Value: s35
+    Key: MULTIPLY
+    Value: s36
+    Key: NE
+    Value: r(simple-exp->term)
+    Key: PLUS
+    Value: r(simple-exp->term)
+    Key: RPAN
+    Value: r(simple-exp->term)
+    Key: RT
+    Value: r(simple-exp->term)
+    Key: RTEQ
+    Value: r(simple-exp->term)
+    Key: SEMI
+    Value: r(simple-exp->term)
+    Key: else
+    Value: r(simple-exp->term)
+    Key: end
+    Value: r(simple-exp->term)
+    Key: mulop
+    Value: 37
+    Key: then
+    Value: r(simple-exp->term)
+    Key: until
+    Value: r(simple-exp->term)
+}
+SLRUnit
+{
+    Key: RPAN
+    Value: s22
+}
+SLRUnit
+{
+    Key: $
+    Value: r(factor->LPAN exp RPAN)
+    Key: DIVIDE
+    Value: r(factor->LPAN exp RPAN)
+    Key: EQ
+    Value: r(factor->LPAN exp RPAN)
+    Key: LT
+    Value: r(factor->LPAN exp RPAN)
+    Key: LTEQ
+    Value: r(factor->LPAN exp RPAN)
+    Key: MINUS
+    Value: r(factor->LPAN exp RPAN)
+    Key: MOD
+    Value: r(factor->LPAN exp RPAN)
+    Key: MULTIPLY
+    Value: r(factor->LPAN exp RPAN)
+    Key: NE
+    Value: r(factor->LPAN exp RPAN)
+    Key: PLUS
+    Value: r(factor->LPAN exp RPAN)
+    Key: RPAN
+    Value: r(factor->LPAN exp RPAN)
+    Key: RT
+    Value: r(factor->LPAN exp RPAN)
+    Key: RTEQ
+    Value: r(factor->LPAN exp RPAN)
+    Key: SEMI
+    Value: r(factor->LPAN exp RPAN)
+    Key: else
+    Value: r(factor->LPAN exp RPAN)
+    Key: end
+    Value: r(factor->LPAN exp RPAN)
+    Key: then
+    Value: r(factor->LPAN exp RPAN)
+    Key: until
+    Value: r(factor->LPAN exp RPAN)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(comparison-op->EQ)
+    Key: LPAN
+    Value: r(comparison-op->EQ)
+    Key: NUMBER
+    Value: r(comparison-op->EQ)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(comparison-op->LT)
+    Key: LPAN
+    Value: r(comparison-op->LT)
+    Key: NUMBER
+    Value: r(comparison-op->LT)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(comparison-op->LTEQ)
+    Key: LPAN
+    Value: r(comparison-op->LTEQ)
+    Key: NUMBER
+    Value: r(comparison-op->LTEQ)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(addop->MINUS)
+    Key: LPAN
+    Value: r(addop->MINUS)
+    Key: NUMBER
+    Value: r(addop->MINUS)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(comparison-op->NE)
+    Key: LPAN
+    Value: r(comparison-op->NE)
+    Key: NUMBER
+    Value: r(comparison-op->NE)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(addop->PLUS)
+    Key: LPAN
+    Value: r(addop->PLUS)
+    Key: NUMBER
+    Value: r(addop->PLUS)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(comparison-op->RT)
+    Key: LPAN
+    Value: r(comparison-op->RT)
+    Key: NUMBER
+    Value: r(comparison-op->RT)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(comparison-op->RTEQ)
+    Key: LPAN
+    Value: r(comparison-op->RTEQ)
+    Key: NUMBER
+    Value: r(comparison-op->RTEQ)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: factor
+    Value: 18
+    Key: term
+    Value: 33
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: factor
+    Value: 18
+    Key: simple-exp
+    Value: 39
+    Key: term
+    Value: 20
+}
+SLRUnit
+{
+    Key: $
+    Value: r(simple-exp->simple-exp addop term)
+    Key: DIVIDE
+    Value: s34
+    Key: EQ
+    Value: r(simple-exp->simple-exp addop term)
+    Key: LT
+    Value: r(simple-exp->simple-exp addop term)
+    Key: LTEQ
+    Value: r(simple-exp->simple-exp addop term)
+    Key: MINUS
+    Value: r(simple-exp->simple-exp addop term)
+    Key: MOD
+    Value: s35
+    Key: MULTIPLY
+    Value: s36
+    Key: NE
+    Value: r(simple-exp->simple-exp addop term)
+    Key: PLUS
+    Value: r(simple-exp->simple-exp addop term)
+    Key: RPAN
+    Value: r(simple-exp->simple-exp addop term)
+    Key: RT
+    Value: r(simple-exp->simple-exp addop term)
+    Key: RTEQ
+    Value: r(simple-exp->simple-exp addop term)
+    Key: SEMI
+    Value: r(simple-exp->simple-exp addop term)
+    Key: else
+    Value: r(simple-exp->simple-exp addop term)
+    Key: end
+    Value: r(simple-exp->simple-exp addop term)
+    Key: mulop
+    Value: 37
+    Key: then
+    Value: r(simple-exp->simple-exp addop term)
+    Key: until
+    Value: r(simple-exp->simple-exp addop term)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(mulop->DIVIDE)
+    Key: LPAN
+    Value: r(mulop->DIVIDE)
+    Key: NUMBER
+    Value: r(mulop->DIVIDE)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(mulop->MOD)
+    Key: LPAN
+    Value: r(mulop->MOD)
+    Key: NUMBER
+    Value: r(mulop->MOD)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(mulop->MULTIPLY)
+    Key: LPAN
+    Value: r(mulop->MULTIPLY)
+    Key: NUMBER
+    Value: r(mulop->MULTIPLY)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: factor
+    Value: 38
+}
+SLRUnit
+{
+    Key: $
+    Value: r(term->term mulop factor)
+    Key: DIVIDE
+    Value: r(term->term mulop factor)
+    Key: EQ
+    Value: r(term->term mulop factor)
+    Key: LT
+    Value: r(term->term mulop factor)
+    Key: LTEQ
+    Value: r(term->term mulop factor)
+    Key: MINUS
+    Value: r(term->term mulop factor)
+    Key: MOD
+    Value: r(term->term mulop factor)
+    Key: MULTIPLY
+    Value: r(term->term mulop factor)
+    Key: NE
+    Value: r(term->term mulop factor)
+    Key: PLUS
+    Value: r(term->term mulop factor)
+    Key: RPAN
+    Value: r(term->term mulop factor)
+    Key: RT
+    Value: r(term->term mulop factor)
+    Key: RTEQ
+    Value: r(term->term mulop factor)
+    Key: SEMI
+    Value: r(term->term mulop factor)
+    Key: else
+    Value: r(term->term mulop factor)
+    Key: end
+    Value: r(term->term mulop factor)
+    Key: then
+    Value: r(term->term mulop factor)
+    Key: until
+    Value: r(term->term mulop factor)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(exp->simple-exp comparison-op simple-exp)
+    Key: MINUS
+    Value: s26
+    Key: PLUS
+    Value: s28
+    Key: RPAN
+    Value: r(exp->simple-exp comparison-op simple-exp)
+    Key: SEMI
+    Value: r(exp->simple-exp comparison-op simple-exp)
+    Key: addop
+    Value: 31
+    Key: else
+    Value: r(exp->simple-exp comparison-op simple-exp)
+    Key: end
+    Value: r(exp->simple-exp comparison-op simple-exp)
+    Key: then
+    Value: r(exp->simple-exp comparison-op simple-exp)
+    Key: until
+    Value: r(exp->simple-exp comparison-op simple-exp)
+}
+SLRUnit
+{
+    Key: then
+    Value: s41
+}
+SLRUnit
+{
+    Key: ID
+    Value: s1
+    Key: assign-stmt
+    Value: 2
+    Key: if
+    Value: s3
+    Key: if-stmt
+    Value: 4
+    Key: read
+    Value: s5
+    Key: read-stmt
+    Value: 6
+    Key: repeat
+    Value: s7
+    Key: repeat-stmt
+    Value: 8
+    Key: statement
+    Value: 9
+    Key: stmt-sequence
+    Value: 42
+    Key: write
+    Value: s11
+    Key: write-stmt
+    Value: 12
+}
+SLRUnit
+{
+    Key: SEMI
+    Value: s45
+    Key: else
+    Value: s50
+    Key: end
+    Value: s51
+}
+SLRUnit
+{
+    Key: $
+    Value: r(read-stmt->read ID)
+    Key: SEMI
+    Value: r(read-stmt->read ID)
+    Key: else
+    Value: r(read-stmt->read ID)
+    Key: end
+    Value: r(read-stmt->read ID)
+    Key: until
+    Value: r(read-stmt->read ID)
+}
+SLRUnit
+{
+    Key: SEMI
+    Value: s45
+    Key: until
+    Value: s46
+}
+SLRUnit
+{
+    Key: ID
+    Value: s1
+    Key: assign-stmt
+    Value: 2
+    Key: if
+    Value: s3
+    Key: if-stmt
+    Value: 4
+    Key: read
+    Value: s5
+    Key: read-stmt
+    Value: 6
+    Key: repeat
+    Value: s7
+    Key: repeat-stmt
+    Value: 8
+    Key: statement
+    Value: 47
+    Key: write
+    Value: s11
+    Key: write-stmt
+    Value: 12
+}
+SLRUnit
+{
+    Key: ID
+    Value: s14
+    Key: LPAN
+    Value: s15
+    Key: NUMBER
+    Value: s16
+    Key: exp
+    Value: 49
+    Key: factor
+    Value: 18
+    Key: simple-exp
+    Value: 19
+    Key: term
+    Value: 20
+}
+SLRUnit
+{
+    Key: $
+    Value: r(stmt-sequence->stmt-sequence SEMI statement)
+    Key: SEMI
+    Value: r(stmt-sequence->stmt-sequence SEMI statement)
+    Key: else
+    Value: r(stmt-sequence->stmt-sequence SEMI statement)
+    Key: end
+    Value: r(stmt-sequence->stmt-sequence SEMI statement)
+    Key: until
+    Value: r(stmt-sequence->stmt-sequence SEMI statement)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(write-stmt->write exp)
+    Key: SEMI
+    Value: r(write-stmt->write exp)
+    Key: else
+    Value: r(write-stmt->write exp)
+    Key: end
+    Value: r(write-stmt->write exp)
+    Key: until
+    Value: r(write-stmt->write exp)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(repeat-stmt->repeat stmt-sequence until exp)
+    Key: SEMI
+    Value: r(repeat-stmt->repeat stmt-sequence until exp)
+    Key: else
+    Value: r(repeat-stmt->repeat stmt-sequence until exp)
+    Key: end
+    Value: r(repeat-stmt->repeat stmt-sequence until exp)
+    Key: until
+    Value: r(repeat-stmt->repeat stmt-sequence until exp)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s1
+    Key: assign-stmt
+    Value: 2
+    Key: if
+    Value: s3
+    Key: if-stmt
+    Value: 4
+    Key: read
+    Value: s5
+    Key: read-stmt
+    Value: 6
+    Key: repeat
+    Value: s7
+    Key: repeat-stmt
+    Value: 8
+    Key: statement
+    Value: 9
+    Key: stmt-sequence
+    Value: 52
+    Key: write
+    Value: s11
+    Key: write-stmt
+    Value: 12
+}
+SLRUnit
+{
+    Key: $
+    Value: r(if-stmt->if exp then stmt-sequence end)
+    Key: SEMI
+    Value: r(if-stmt->if exp then stmt-sequence end)
+    Key: else
+    Value: r(if-stmt->if exp then stmt-sequence end)
+    Key: end
+    Value: r(if-stmt->if exp then stmt-sequence end)
+    Key: until
+    Value: r(if-stmt->if exp then stmt-sequence end)
+}
+SLRUnit
+{
+    Key: SEMI
+    Value: s45
+    Key: end
+    Value: s53
+}
+SLRUnit
+{
+    Key: $
+    Value: r(if-stmt->if exp then stmt-sequence else stmt-sequence end)
+    Key: SEMI
+    Value: r(if-stmt->if exp then stmt-sequence else stmt-sequence end)
+    Key: else
+    Value: r(if-stmt->if exp then stmt-sequence else stmt-sequence end)
+    Key: end
+    Value: r(if-stmt->if exp then stmt-sequence else stmt-sequence end)
+    Key: until
+    Value: r(if-stmt->if exp then stmt-sequence else stmt-sequence end)
+}

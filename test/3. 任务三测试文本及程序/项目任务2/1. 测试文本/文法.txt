@@ -1,0 +1,67 @@
+program | definition-list | definition | variable-definition | function-definition | type-indicator | parameters | compound-stmt | parameter-list | parameter | local-definitions | statement-list | statement | expression-stmt | condition-stmt | dowhile-stmt | return-stmt | expression | simple-expression | variable | additive-expression | relop | term | addop | mulop | factor | call | arguments | argument-list
+ID | SEMI | LMM | RMM | int | float | double | void | LLM | RLM | if | else | do | while | return | LTEQ | LT | RT | RTEQ | EQ | NE | PLUS | MINUS | MULTIPLY | DIVIDE | MOD | NUMBER | DOU | LBM | RBM | ASSIGN
+program -> definition-list
+definition-list -> definition-list definition
+definition-list -> definition
+definition -> variable-definition
+definition -> function-definition
+variable-definition -> type-indicator ID SEMI
+variable-definition -> type-indicator ID LMM NUMBER RMM SEMI
+type-indicator -> int
+type-indicator -> float
+type-indicator -> double
+type-indicator -> void
+function-definition -> type-indicator ID LLM parameters RLM compound-stmt
+parameters -> parameter-list
+parameters -> void
+parameter-list -> parameter-list DOU parameter
+parameter-list -> parameter
+parameter -> type-indicator ID
+parameter -> type-indicator ID LMM RMM
+compound-stmt -> LBM local-definitions statement-list RBM
+local-definitions -> local-definitions variable-definition
+local-definitions -> @
+statement-list -> statement-list statement
+statement-list -> @
+statement -> expression-stmt
+statement -> compound-stmt
+statement -> condition-stmt
+statement -> dowhile-stmt
+statement -> return-stmt
+expression-stmt -> expression SEMI
+expression-stmt -> SEMI
+condition-stmt -> if LLM expression RLM statement
+condition-stmt -> if LLM expression RLM statement else statement
+dowhile-stmt -> do statement while LLM expression RLM SEMI
+return-stmt -> return SEMI
+return-stmt -> return expression SEMI
+expression -> variable ASSIGN expression
+expression -> simple-expression
+variable -> ID
+variable -> ID LMM expression RMM
+simple-expression -> additive-expression relop additive-expression
+simple-expression -> additive-expression
+relop -> LTEQ
+relop -> LT
+relop -> RT
+relop -> RTEQ
+relop -> EQ
+relop -> NE
+additive-expression -> additive-expression addop term
+additive-expression -> term
+addop -> PLUS
+addop -> MINUS
+term -> term mulop factor
+term -> factor
+mulop -> MULTIPLY
+mulop -> DIVIDE
+mulop -> MOD
+factor -> LLM expression RLM
+factor -> variable
+factor -> call
+factor -> NUMBER
+call -> ID LLM arguments RLM
+arguments -> argument-list
+arguments -> @
+argument-list -> argument-list DOU expression
+argument-list -> expression

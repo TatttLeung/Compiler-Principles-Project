@@ -1,0 +1,6 @@
+else|if|int|float|double|return|void|do|while
+\+\ | - | \*\ | / | % | <  | <= | >= | > | ==| != | = | ; | , | \(\ | \)\ | \[\ | \]\ | { | }
+PLUS | MINUS | MULTIPLY | DIVIDE | MOD | LT| LTEQ | RTEQ | RT | EQ | NE | ASSIGN | SEMI | DOU | LLM | RLM | LMM | RMM | LBM | RBM
+(_|letter)(_|letter|num)*
+num num* (.num num *)?
+//~\n

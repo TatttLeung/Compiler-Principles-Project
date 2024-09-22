@@ -1,0 +1,36 @@
+program | stmt-sequence | statement | if-stmt | repeat-stmt | assign-stmt | read-stmt | write-stmt | exp | simple-exp | comparison-op | addop | term | mulop | factor
+SEMI | if | then | end | else | repeat | until | ASSIGN  | read | ID | number | write | LT | EQ | LTEQ | NE | RTEQ | RT | PLUS | MINUS | MULTIPLY | DIVIDE | MOD | LPAN | RPAN | NUMBER
+program -> stmt-sequence
+stmt-sequence -> stmt-sequence SEMI statement
+stmt-sequence -> statement
+statement -> if-stmt
+statement -> repeat-stmt
+statement -> assign-stmt
+statement -> read-stmt
+statement -> write-stmt
+if-stmt -> if exp then stmt-sequence end
+if-stmt -> if exp then stmt-sequence else stmt-sequence end
+repeat-stmt -> repeat stmt-sequence until exp
+assign-stmt -> ID ASSIGN exp
+read-stmt -> read ID
+write-stmt -> write exp
+exp -> simple-exp comparison-op simple-exp
+exp -> simple-exp
+comparison-op -> LT
+comparison-op -> EQ
+comparison-op -> LTEQ
+comparison-op -> NE
+comparison-op -> RTEQ
+comparison-op -> RT
+simple-exp -> simple-exp addop term
+simple-exp -> term
+addop -> PLUS
+addop -> MINUS
+term -> term mulop factor
+term -> factor
+mulop -> MULTIPLY
+mulop -> DIVIDE
+mulop -> MOD
+factor -> LPAN exp RPAN
+factor -> NUMBER
+factor -> ID

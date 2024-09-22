@@ -1,0 +1,364 @@
+BTreeNode
+{
+    kind: -1
+    value: definition-list
+    nodeList:
+    BTreeNode
+    {
+        kind: -1
+        value: definition-list
+        nodeList:
+        BTreeNode
+        {
+            kind: -1
+            value: definition-list
+            nodeList:
+            BTreeNode
+            {
+                kind: -1
+                value: definition-list
+                nodeList:
+                BTreeNode
+                {
+                    kind: -1
+                    value: definition-list
+                    nodeList:
+                    BTreeNode
+                    {
+                        kind: ID
+                        value: x
+                        nodeList:
+                        BTreeNode
+                        {
+                            kind: int
+                            value: int
+                        }
+                    }
+                    BTreeNode
+                    {
+                        kind: ID
+                        value: fact
+                        nodeList:
+                        BTreeNode
+                        {
+                            kind: int
+                            value: int
+                        }
+                    }
+                }
+                BTreeNode
+                {
+                    kind: ID
+                    value: y
+                    nodeList:
+                    BTreeNode
+                    {
+                        kind: double
+                        value: double
+                    }
+                }
+            }
+            BTreeNode
+            {
+                kind: ID
+                value: arr
+                nodeList:
+                BTreeNode
+                {
+                    kind: int
+                    value: int
+                }
+                BTreeNode
+                {
+                    kind: NUMBER
+                    value: 100
+                }
+            }
+        }
+        BTreeNode
+        {
+            kind: ID
+            value: test
+            nodeList:
+            BTreeNode
+            {
+                kind: void
+                value: void
+            }
+            BTreeNode
+            {
+                kind: -1
+                value: parameter-list
+                nodeList:
+                BTreeNode
+                {
+                    kind: ID
+                    value: a
+                    nodeList:
+                    BTreeNode
+                    {
+                        kind: int
+                        value: int
+                    }
+                }
+                BTreeNode
+                {
+                    kind: ID
+                    value: b
+                    nodeList:
+                    BTreeNode
+                    {
+                        kind: int
+                        value: int
+                    }
+                }
+            }
+            BTreeNode
+            {
+                kind: -2
+                value: local-definitions
+                nodeList:
+                BTreeNode
+                {
+                    kind: -1
+                    value: statement-list
+                    nodeList:
+                    BTreeNode
+                    {
+                        kind: -1
+                        value: statement-list
+                        nodeList:
+                        BTreeNode
+                        {
+                            kind: -1
+                            value: statement-list
+                            nodeList:
+                            BTreeNode
+                            {
+                                kind: -2
+                                value: statement-list
+                            }
+                            BTreeNode
+                            {
+                                kind: ASSIGN
+                                value: =
+                                nodeList:
+                                BTreeNode
+                                {
+                                    kind: ID
+                                    value: a
+                                }
+                                BTreeNode
+                                {
+                                    kind: NUMBER
+                                    value: 1
+                                }
+                            }
+                        }
+                        BTreeNode
+                        {
+                            kind: ASSIGN
+                            value: =
+                            nodeList:
+                            BTreeNode
+                            {
+                                kind: ID
+                                value: b
+                            }
+                            BTreeNode
+                            {
+                                kind: NUMBER
+                                value: 2
+                            }
+                        }
+                    }
+                    BTreeNode
+                    {
+                        kind: return
+                        value: return
+                    }
+                }
+            }
+        }
+    }
+    BTreeNode
+    {
+        kind: ID
+        value: main
+        nodeList:
+        BTreeNode
+        {
+            kind: void
+            value: void
+        }
+        BTreeNode
+        {
+            kind: void
+            value: void
+        }
+        BTreeNode
+        {
+            kind: -2
+            value: local-definitions
+            nodeList:
+            BTreeNode
+            {
+                kind: -1
+                value: statement-list
+                nodeList:
+                BTreeNode
+                {
+                    kind: -1
+                    value: statement-list
+                    nodeList:
+                    BTreeNode
+                    {
+                        kind: -1
+                        value: statement-list
+                        nodeList:
+                        BTreeNode
+                        {
+                            kind: -1
+                            value: statement-list
+                            nodeList:
+                            BTreeNode
+                            {
+                                kind: -2
+                                value: statement-list
+                            }
+                            BTreeNode
+                            {
+                                kind: ASSIGN
+                                value: =
+                                nodeList:
+                                BTreeNode
+                                {
+                                    kind: ID
+                                    value: x
+                                }
+                                BTreeNode
+                                {
+                                    kind: NUMBER
+                                    value: 2
+                                }
+                            }
+                        }
+                        BTreeNode
+                        {
+                            kind: ASSIGN
+                            value: =
+                            nodeList:
+                            BTreeNode
+                            {
+                                kind: ID
+                                value: y
+                            }
+                            BTreeNode
+                            {
+                                kind: NUMBER
+                                value: 3
+                            }
+                        }
+                    }
+                    BTreeNode
+                    {
+                        kind: if
+                        value: if
+                        nodeList:
+                        BTreeNode
+                        {
+                            kind: RT
+                            value: >
+                            nodeList:
+                            BTreeNode
+                            {
+                                kind: ID
+                                value: x
+                            }
+                            BTreeNode
+                            {
+                                kind: NUMBER
+                                value: 1
+                            }
+                        }
+                        BTreeNode
+                        {
+                            kind: do
+                            value: do
+                            nodeList:
+                            BTreeNode
+                            {
+                                kind: ASSIGN
+                                value: =
+                                nodeList:
+                                BTreeNode
+                                {
+                                    kind: ID
+                                    value: fact
+                                }
+                                BTreeNode
+                                {
+                                    kind: -1
+                                    value: term
+                                    nodeList:
+                                    BTreeNode
+                                    {
+                                        kind: ID
+                                        value: fact
+                                    }
+                                    BTreeNode
+                                    {
+                                        kind: MULTIPLY
+                                        value: *
+                                    }
+                                    BTreeNode
+                                    {
+                                        kind: ID
+                                        value: x
+                                    }
+                                }
+                            }
+                            BTreeNode
+                            {
+                                kind: RTEQ
+                                value: >=
+                                nodeList:
+                                BTreeNode
+                                {
+                                    kind: ID
+                                    value: fact
+                                }
+                                BTreeNode
+                                {
+                                    kind: NUMBER
+                                    value: 1
+                                }
+                            }
+                        }
+                        BTreeNode
+                        {
+                            kind: ASSIGN
+                            value: =
+                            nodeList:
+                            BTreeNode
+                            {
+                                kind: ID
+                                value: x
+                            }
+                            BTreeNode
+                            {
+                                kind: NUMBER
+                                value: 1
+                            }
+                        }
+                    }
+                }
+                BTreeNode
+                {
+                    kind: return
+                    value: return
+                }
+            }
+        }
+    }
+}

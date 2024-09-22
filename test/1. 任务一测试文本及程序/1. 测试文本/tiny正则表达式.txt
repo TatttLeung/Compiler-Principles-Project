@@ -1,0 +1,6 @@
+if|then|else|end|repeat|until|read|write
+\+\ | - | \*\ | / | % | < | <> | <= | >= | > | = | ; | := | \(\ | \)\
+PLUS | MINUS | MULTIPLY | DIVIDE | MOD | LT| NE | LTEQ | RTEQ | RT | EQ | SEMI | ASSIGN | LPAN | RPAN
+letter(letter|num)*
+num num*
+{~}

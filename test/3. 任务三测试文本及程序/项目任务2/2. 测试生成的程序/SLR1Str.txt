@@ -1,0 +1,1878 @@
+SLRUnit
+{
+    Key: definition
+    Value: 1
+    Key: definition-list
+    Value: 2
+    Key: double
+    Value: s3
+    Key: float
+    Value: s4
+    Key: function-definition
+    Value: 5
+    Key: int
+    Value: s6
+    Key: type-indicator
+    Value: 7
+    Key: variable-definition
+    Value: 8
+    Key: void
+    Value: s9
+}
+SLRUnit
+{
+    Key: $
+    Value: r(definition-list->definition)
+    Key: double
+    Value: r(definition-list->definition)
+    Key: float
+    Value: r(definition-list->definition)
+    Key: int
+    Value: r(definition-list->definition)
+    Key: void
+    Value: r(definition-list->definition)
+}
+SLRUnit
+{
+    Key: $
+    Value: ACCEPT
+    Key: definition
+    Value: 10
+    Key: double
+    Value: s3
+    Key: float
+    Value: s4
+    Key: function-definition
+    Value: 5
+    Key: int
+    Value: s6
+    Key: type-indicator
+    Value: 7
+    Key: variable-definition
+    Value: 8
+    Key: void
+    Value: s9
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(type-indicator->double)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(type-indicator->float)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(definition->function-definition)
+    Key: double
+    Value: r(definition->function-definition)
+    Key: float
+    Value: r(definition->function-definition)
+    Key: int
+    Value: r(definition->function-definition)
+    Key: void
+    Value: r(definition->function-definition)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(type-indicator->int)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s11
+}
+SLRUnit
+{
+    Key: $
+    Value: r(definition->variable-definition)
+    Key: double
+    Value: r(definition->variable-definition)
+    Key: float
+    Value: r(definition->variable-definition)
+    Key: int
+    Value: r(definition->variable-definition)
+    Key: void
+    Value: r(definition->variable-definition)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(type-indicator->void)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(definition-list->definition-list definition)
+    Key: double
+    Value: r(definition-list->definition-list definition)
+    Key: float
+    Value: r(definition-list->definition-list definition)
+    Key: int
+    Value: r(definition-list->definition-list definition)
+    Key: void
+    Value: r(definition-list->definition-list definition)
+}
+SLRUnit
+{
+    Key: LLM
+    Value: s12
+    Key: LMM
+    Value: s13
+    Key: SEMI
+    Value: s14
+}
+SLRUnit
+{
+    Key: double
+    Value: s3
+    Key: float
+    Value: s4
+    Key: int
+    Value: s6
+    Key: parameter
+    Value: 15
+    Key: parameter-list
+    Value: 16
+    Key: parameters
+    Value: 17
+    Key: type-indicator
+    Value: 18
+    Key: void
+    Value: s19
+}
+SLRUnit
+{
+    Key: NUMBER
+    Value: s103
+}
+SLRUnit
+{
+    Key: $
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: ID
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: LBM
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: LLM
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: NUMBER
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: RBM
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: SEMI
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: do
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: double
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: float
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: if
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: int
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: return
+    Value: r(variable-definition->type-indicator ID SEMI)
+    Key: void
+    Value: r(variable-definition->type-indicator ID SEMI)
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(parameter-list->parameter)
+    Key: RLM
+    Value: r(parameter-list->parameter)
+}
+SLRUnit
+{
+    Key: DOU
+    Value: s20
+    Key: RLM
+    Value: r(parameters->parameter-list)
+}
+SLRUnit
+{
+    Key: RLM
+    Value: s25
+}
+SLRUnit
+{
+    Key: ID
+    Value: s22
+}
+SLRUnit
+{
+    Key: RLM
+    Value: r(parameters->void)
+}
+SLRUnit
+{
+    Key: double
+    Value: s3
+    Key: float
+    Value: s4
+    Key: int
+    Value: s6
+    Key: parameter
+    Value: 21
+    Key: type-indicator
+    Value: 18
+    Key: void
+    Value: s9
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(parameter-list->parameter-list DOU parameter)
+    Key: RLM
+    Value: r(parameter-list->parameter-list DOU parameter)
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(parameter->type-indicator ID)
+    Key: LMM
+    Value: s23
+    Key: RLM
+    Value: r(parameter->type-indicator ID)
+}
+SLRUnit
+{
+    Key: RMM
+    Value: s24
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(parameter->type-indicator ID LMM RMM)
+    Key: RLM
+    Value: r(parameter->type-indicator ID LMM RMM)
+}
+SLRUnit
+{
+    Key: LBM
+    Value: s26
+    Key: compound-stmt
+    Value: 27
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(local-definitions->@)
+    Key: LBM
+    Value: r(local-definitions->@)
+    Key: LLM
+    Value: r(local-definitions->@)
+    Key: NUMBER
+    Value: r(local-definitions->@)
+    Key: RBM
+    Value: r(local-definitions->@)
+    Key: SEMI
+    Value: r(local-definitions->@)
+    Key: do
+    Value: r(local-definitions->@)
+    Key: double
+    Value: r(local-definitions->@)
+    Key: float
+    Value: r(local-definitions->@)
+    Key: if
+    Value: r(local-definitions->@)
+    Key: int
+    Value: r(local-definitions->@)
+    Key: local-definitions
+    Value: 28
+    Key: return
+    Value: r(local-definitions->@)
+    Key: void
+    Value: r(local-definitions->@)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(function-definition->type-indicator ID LLM parameters RLM compound-stmt)
+    Key: double
+    Value: r(function-definition->type-indicator ID LLM parameters RLM compound-stmt)
+    Key: float
+    Value: r(function-definition->type-indicator ID LLM parameters RLM compound-stmt)
+    Key: int
+    Value: r(function-definition->type-indicator ID LLM parameters RLM compound-stmt)
+    Key: void
+    Value: r(function-definition->type-indicator ID LLM parameters RLM compound-stmt)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(statement-list->@)
+    Key: LBM
+    Value: r(statement-list->@)
+    Key: LLM
+    Value: r(statement-list->@)
+    Key: NUMBER
+    Value: r(statement-list->@)
+    Key: RBM
+    Value: r(statement-list->@)
+    Key: SEMI
+    Value: r(statement-list->@)
+    Key: do
+    Value: r(statement-list->@)
+    Key: double
+    Value: s3
+    Key: float
+    Value: s4
+    Key: if
+    Value: r(statement-list->@)
+    Key: int
+    Value: s6
+    Key: return
+    Value: r(statement-list->@)
+    Key: statement-list
+    Value: 29
+    Key: type-indicator
+    Value: 30
+    Key: variable-definition
+    Value: 31
+    Key: void
+    Value: s9
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LBM
+    Value: s26
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: RBM
+    Value: s35
+    Key: SEMI
+    Value: s36
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: compound-stmt
+    Value: 39
+    Key: condition-stmt
+    Value: 40
+    Key: do
+    Value: s41
+    Key: dowhile-stmt
+    Value: 42
+    Key: expression
+    Value: 43
+    Key: expression-stmt
+    Value: 44
+    Key: factor
+    Value: 45
+    Key: if
+    Value: s46
+    Key: return
+    Value: s47
+    Key: return-stmt
+    Value: 48
+    Key: simple-expression
+    Value: 49
+    Key: statement
+    Value: 50
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: ID
+    Value: s102
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: LBM
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: LLM
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: NUMBER
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: RBM
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: SEMI
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: do
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: double
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: float
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: if
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: int
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: return
+    Value: r(local-definitions->local-definitions variable-definition)
+    Key: void
+    Value: r(local-definitions->local-definitions variable-definition)
+}
+SLRUnit
+{
+    Key: ASSIGN
+    Value: r(variable->ID)
+    Key: DIVIDE
+    Value: r(variable->ID)
+    Key: DOU
+    Value: r(variable->ID)
+    Key: EQ
+    Value: r(variable->ID)
+    Key: LLM
+    Value: s53
+    Key: LMM
+    Value: s54
+    Key: LT
+    Value: r(variable->ID)
+    Key: LTEQ
+    Value: r(variable->ID)
+    Key: MINUS
+    Value: r(variable->ID)
+    Key: MOD
+    Value: r(variable->ID)
+    Key: MULTIPLY
+    Value: r(variable->ID)
+    Key: NE
+    Value: r(variable->ID)
+    Key: PLUS
+    Value: r(variable->ID)
+    Key: RLM
+    Value: r(variable->ID)
+    Key: RMM
+    Value: r(variable->ID)
+    Key: RT
+    Value: r(variable->ID)
+    Key: RTEQ
+    Value: r(variable->ID)
+    Key: SEMI
+    Value: r(variable->ID)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 58
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: r(factor->NUMBER)
+    Key: DOU
+    Value: r(factor->NUMBER)
+    Key: EQ
+    Value: r(factor->NUMBER)
+    Key: LT
+    Value: r(factor->NUMBER)
+    Key: LTEQ
+    Value: r(factor->NUMBER)
+    Key: MINUS
+    Value: r(factor->NUMBER)
+    Key: MOD
+    Value: r(factor->NUMBER)
+    Key: MULTIPLY
+    Value: r(factor->NUMBER)
+    Key: NE
+    Value: r(factor->NUMBER)
+    Key: PLUS
+    Value: r(factor->NUMBER)
+    Key: RLM
+    Value: r(factor->NUMBER)
+    Key: RMM
+    Value: r(factor->NUMBER)
+    Key: RT
+    Value: r(factor->NUMBER)
+    Key: RTEQ
+    Value: r(factor->NUMBER)
+    Key: SEMI
+    Value: r(factor->NUMBER)
+}
+SLRUnit
+{
+    Key: $
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: ID
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: LBM
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: LLM
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: NUMBER
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: RBM
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: SEMI
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: do
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: double
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: else
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: float
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: if
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: int
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: return
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: void
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+    Key: while
+    Value: r(compound-stmt->LBM local-definitions statement-list RBM)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(expression-stmt->SEMI)
+    Key: LBM
+    Value: r(expression-stmt->SEMI)
+    Key: LLM
+    Value: r(expression-stmt->SEMI)
+    Key: NUMBER
+    Value: r(expression-stmt->SEMI)
+    Key: RBM
+    Value: r(expression-stmt->SEMI)
+    Key: SEMI
+    Value: r(expression-stmt->SEMI)
+    Key: do
+    Value: r(expression-stmt->SEMI)
+    Key: else
+    Value: r(expression-stmt->SEMI)
+    Key: if
+    Value: r(expression-stmt->SEMI)
+    Key: return
+    Value: r(expression-stmt->SEMI)
+    Key: while
+    Value: r(expression-stmt->SEMI)
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(simple-expression->additive-expression)
+    Key: EQ
+    Value: s59
+    Key: LT
+    Value: s60
+    Key: LTEQ
+    Value: s61
+    Key: MINUS
+    Value: s62
+    Key: NE
+    Value: s63
+    Key: PLUS
+    Value: s64
+    Key: RLM
+    Value: r(simple-expression->additive-expression)
+    Key: RMM
+    Value: r(simple-expression->additive-expression)
+    Key: RT
+    Value: s65
+    Key: RTEQ
+    Value: s66
+    Key: SEMI
+    Value: r(simple-expression->additive-expression)
+    Key: addop
+    Value: 67
+    Key: relop
+    Value: 68
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: r(factor->call)
+    Key: DOU
+    Value: r(factor->call)
+    Key: EQ
+    Value: r(factor->call)
+    Key: LT
+    Value: r(factor->call)
+    Key: LTEQ
+    Value: r(factor->call)
+    Key: MINUS
+    Value: r(factor->call)
+    Key: MOD
+    Value: r(factor->call)
+    Key: MULTIPLY
+    Value: r(factor->call)
+    Key: NE
+    Value: r(factor->call)
+    Key: PLUS
+    Value: r(factor->call)
+    Key: RLM
+    Value: r(factor->call)
+    Key: RMM
+    Value: r(factor->call)
+    Key: RT
+    Value: r(factor->call)
+    Key: RTEQ
+    Value: r(factor->call)
+    Key: SEMI
+    Value: r(factor->call)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(statement->compound-stmt)
+    Key: LBM
+    Value: r(statement->compound-stmt)
+    Key: LLM
+    Value: r(statement->compound-stmt)
+    Key: NUMBER
+    Value: r(statement->compound-stmt)
+    Key: RBM
+    Value: r(statement->compound-stmt)
+    Key: SEMI
+    Value: r(statement->compound-stmt)
+    Key: do
+    Value: r(statement->compound-stmt)
+    Key: else
+    Value: r(statement->compound-stmt)
+    Key: if
+    Value: r(statement->compound-stmt)
+    Key: return
+    Value: r(statement->compound-stmt)
+    Key: while
+    Value: r(statement->compound-stmt)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(statement->condition-stmt)
+    Key: LBM
+    Value: r(statement->condition-stmt)
+    Key: LLM
+    Value: r(statement->condition-stmt)
+    Key: NUMBER
+    Value: r(statement->condition-stmt)
+    Key: RBM
+    Value: r(statement->condition-stmt)
+    Key: SEMI
+    Value: r(statement->condition-stmt)
+    Key: do
+    Value: r(statement->condition-stmt)
+    Key: else
+    Value: r(statement->condition-stmt)
+    Key: if
+    Value: r(statement->condition-stmt)
+    Key: return
+    Value: r(statement->condition-stmt)
+    Key: while
+    Value: r(statement->condition-stmt)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LBM
+    Value: s26
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: SEMI
+    Value: s36
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: compound-stmt
+    Value: 39
+    Key: condition-stmt
+    Value: 40
+    Key: do
+    Value: s41
+    Key: dowhile-stmt
+    Value: 42
+    Key: expression
+    Value: 43
+    Key: expression-stmt
+    Value: 44
+    Key: factor
+    Value: 45
+    Key: if
+    Value: s46
+    Key: return
+    Value: s47
+    Key: return-stmt
+    Value: 48
+    Key: simple-expression
+    Value: 49
+    Key: statement
+    Value: 86
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(statement->dowhile-stmt)
+    Key: LBM
+    Value: r(statement->dowhile-stmt)
+    Key: LLM
+    Value: r(statement->dowhile-stmt)
+    Key: NUMBER
+    Value: r(statement->dowhile-stmt)
+    Key: RBM
+    Value: r(statement->dowhile-stmt)
+    Key: SEMI
+    Value: r(statement->dowhile-stmt)
+    Key: do
+    Value: r(statement->dowhile-stmt)
+    Key: else
+    Value: r(statement->dowhile-stmt)
+    Key: if
+    Value: r(statement->dowhile-stmt)
+    Key: return
+    Value: r(statement->dowhile-stmt)
+    Key: while
+    Value: r(statement->dowhile-stmt)
+}
+SLRUnit
+{
+    Key: SEMI
+    Value: s87
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(statement->expression-stmt)
+    Key: LBM
+    Value: r(statement->expression-stmt)
+    Key: LLM
+    Value: r(statement->expression-stmt)
+    Key: NUMBER
+    Value: r(statement->expression-stmt)
+    Key: RBM
+    Value: r(statement->expression-stmt)
+    Key: SEMI
+    Value: r(statement->expression-stmt)
+    Key: do
+    Value: r(statement->expression-stmt)
+    Key: else
+    Value: r(statement->expression-stmt)
+    Key: if
+    Value: r(statement->expression-stmt)
+    Key: return
+    Value: r(statement->expression-stmt)
+    Key: while
+    Value: r(statement->expression-stmt)
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: r(term->factor)
+    Key: DOU
+    Value: r(term->factor)
+    Key: EQ
+    Value: r(term->factor)
+    Key: LT
+    Value: r(term->factor)
+    Key: LTEQ
+    Value: r(term->factor)
+    Key: MINUS
+    Value: r(term->factor)
+    Key: MOD
+    Value: r(term->factor)
+    Key: MULTIPLY
+    Value: r(term->factor)
+    Key: NE
+    Value: r(term->factor)
+    Key: PLUS
+    Value: r(term->factor)
+    Key: RLM
+    Value: r(term->factor)
+    Key: RMM
+    Value: r(term->factor)
+    Key: RT
+    Value: r(term->factor)
+    Key: RTEQ
+    Value: r(term->factor)
+    Key: SEMI
+    Value: r(term->factor)
+}
+SLRUnit
+{
+    Key: LLM
+    Value: s88
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: SEMI
+    Value: s92
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 93
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(statement->return-stmt)
+    Key: LBM
+    Value: r(statement->return-stmt)
+    Key: LLM
+    Value: r(statement->return-stmt)
+    Key: NUMBER
+    Value: r(statement->return-stmt)
+    Key: RBM
+    Value: r(statement->return-stmt)
+    Key: SEMI
+    Value: r(statement->return-stmt)
+    Key: do
+    Value: r(statement->return-stmt)
+    Key: else
+    Value: r(statement->return-stmt)
+    Key: if
+    Value: r(statement->return-stmt)
+    Key: return
+    Value: r(statement->return-stmt)
+    Key: while
+    Value: r(statement->return-stmt)
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(expression->simple-expression)
+    Key: RLM
+    Value: r(expression->simple-expression)
+    Key: RMM
+    Value: r(expression->simple-expression)
+    Key: SEMI
+    Value: r(expression->simple-expression)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(statement-list->statement-list statement)
+    Key: LBM
+    Value: r(statement-list->statement-list statement)
+    Key: LLM
+    Value: r(statement-list->statement-list statement)
+    Key: NUMBER
+    Value: r(statement-list->statement-list statement)
+    Key: RBM
+    Value: r(statement-list->statement-list statement)
+    Key: SEMI
+    Value: r(statement-list->statement-list statement)
+    Key: do
+    Value: r(statement-list->statement-list statement)
+    Key: if
+    Value: r(statement-list->statement-list statement)
+    Key: return
+    Value: r(statement-list->statement-list statement)
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: s74
+    Key: DOU
+    Value: r(additive-expression->term)
+    Key: EQ
+    Value: r(additive-expression->term)
+    Key: LT
+    Value: r(additive-expression->term)
+    Key: LTEQ
+    Value: r(additive-expression->term)
+    Key: MINUS
+    Value: r(additive-expression->term)
+    Key: MOD
+    Value: s75
+    Key: MULTIPLY
+    Value: s76
+    Key: NE
+    Value: r(additive-expression->term)
+    Key: PLUS
+    Value: r(additive-expression->term)
+    Key: RLM
+    Value: r(additive-expression->term)
+    Key: RMM
+    Value: r(additive-expression->term)
+    Key: RT
+    Value: r(additive-expression->term)
+    Key: RTEQ
+    Value: r(additive-expression->term)
+    Key: SEMI
+    Value: r(additive-expression->term)
+    Key: mulop
+    Value: 77
+}
+SLRUnit
+{
+    Key: ASSIGN
+    Value: s79
+    Key: DIVIDE
+    Value: r(factor->variable)
+    Key: DOU
+    Value: r(factor->variable)
+    Key: EQ
+    Value: r(factor->variable)
+    Key: LT
+    Value: r(factor->variable)
+    Key: LTEQ
+    Value: r(factor->variable)
+    Key: MINUS
+    Value: r(factor->variable)
+    Key: MOD
+    Value: r(factor->variable)
+    Key: MULTIPLY
+    Value: r(factor->variable)
+    Key: NE
+    Value: r(factor->variable)
+    Key: PLUS
+    Value: r(factor->variable)
+    Key: RLM
+    Value: r(factor->variable)
+    Key: RMM
+    Value: r(factor->variable)
+    Key: RT
+    Value: r(factor->variable)
+    Key: RTEQ
+    Value: r(factor->variable)
+    Key: SEMI
+    Value: r(factor->variable)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: RLM
+    Value: r(arguments->@)
+    Key: additive-expression
+    Value: 37
+    Key: argument-list
+    Value: 55
+    Key: arguments
+    Value: 56
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 57
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 72
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: DOU
+    Value: s83
+    Key: RLM
+    Value: r(arguments->argument-list)
+}
+SLRUnit
+{
+    Key: RLM
+    Value: s85
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(argument-list->expression)
+    Key: RLM
+    Value: r(argument-list->expression)
+}
+SLRUnit
+{
+    Key: RLM
+    Value: s82
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(relop->EQ)
+    Key: LLM
+    Value: r(relop->EQ)
+    Key: NUMBER
+    Value: r(relop->EQ)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(relop->LT)
+    Key: LLM
+    Value: r(relop->LT)
+    Key: NUMBER
+    Value: r(relop->LT)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(relop->LTEQ)
+    Key: LLM
+    Value: r(relop->LTEQ)
+    Key: NUMBER
+    Value: r(relop->LTEQ)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(addop->MINUS)
+    Key: LLM
+    Value: r(addop->MINUS)
+    Key: NUMBER
+    Value: r(addop->MINUS)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(relop->NE)
+    Key: LLM
+    Value: r(relop->NE)
+    Key: NUMBER
+    Value: r(relop->NE)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(addop->PLUS)
+    Key: LLM
+    Value: r(addop->PLUS)
+    Key: NUMBER
+    Value: r(addop->PLUS)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(relop->RT)
+    Key: LLM
+    Value: r(relop->RT)
+    Key: NUMBER
+    Value: r(relop->RT)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(relop->RTEQ)
+    Key: LLM
+    Value: r(relop->RTEQ)
+    Key: NUMBER
+    Value: r(relop->RTEQ)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s69
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: call
+    Value: 38
+    Key: factor
+    Value: 45
+    Key: term
+    Value: 70
+    Key: variable
+    Value: 71
+}
+SLRUnit
+{
+    Key: ID
+    Value: s69
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: additive-expression
+    Value: 81
+    Key: call
+    Value: 38
+    Key: factor
+    Value: 45
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 71
+}
+SLRUnit
+{
+    Key: ASSIGN
+    Value: r(variable->ID)
+    Key: DIVIDE
+    Value: r(variable->ID)
+    Key: DOU
+    Value: r(variable->ID)
+    Key: EQ
+    Value: r(variable->ID)
+    Key: LLM
+    Value: s53
+    Key: LMM
+    Value: s54
+    Key: LT
+    Value: r(variable->ID)
+    Key: LTEQ
+    Value: r(variable->ID)
+    Key: MINUS
+    Value: r(variable->ID)
+    Key: MOD
+    Value: r(variable->ID)
+    Key: MULTIPLY
+    Value: r(variable->ID)
+    Key: NE
+    Value: r(variable->ID)
+    Key: PLUS
+    Value: r(variable->ID)
+    Key: RLM
+    Value: r(variable->ID)
+    Key: RMM
+    Value: r(variable->ID)
+    Key: RT
+    Value: r(variable->ID)
+    Key: RTEQ
+    Value: r(variable->ID)
+    Key: SEMI
+    Value: r(variable->ID)
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: s74
+    Key: DOU
+    Value: r(additive-expression->additive-expression addop term)
+    Key: EQ
+    Value: r(additive-expression->additive-expression addop term)
+    Key: LT
+    Value: r(additive-expression->additive-expression addop term)
+    Key: LTEQ
+    Value: r(additive-expression->additive-expression addop term)
+    Key: MINUS
+    Value: r(additive-expression->additive-expression addop term)
+    Key: MOD
+    Value: s75
+    Key: MULTIPLY
+    Value: s76
+    Key: NE
+    Value: r(additive-expression->additive-expression addop term)
+    Key: PLUS
+    Value: r(additive-expression->additive-expression addop term)
+    Key: RLM
+    Value: r(additive-expression->additive-expression addop term)
+    Key: RMM
+    Value: r(additive-expression->additive-expression addop term)
+    Key: RT
+    Value: r(additive-expression->additive-expression addop term)
+    Key: RTEQ
+    Value: r(additive-expression->additive-expression addop term)
+    Key: SEMI
+    Value: r(additive-expression->additive-expression addop term)
+    Key: mulop
+    Value: 77
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: r(factor->variable)
+    Key: DOU
+    Value: r(factor->variable)
+    Key: EQ
+    Value: r(factor->variable)
+    Key: LT
+    Value: r(factor->variable)
+    Key: LTEQ
+    Value: r(factor->variable)
+    Key: MINUS
+    Value: r(factor->variable)
+    Key: MOD
+    Value: r(factor->variable)
+    Key: MULTIPLY
+    Value: r(factor->variable)
+    Key: NE
+    Value: r(factor->variable)
+    Key: PLUS
+    Value: r(factor->variable)
+    Key: RLM
+    Value: r(factor->variable)
+    Key: RMM
+    Value: r(factor->variable)
+    Key: RT
+    Value: r(factor->variable)
+    Key: RTEQ
+    Value: r(factor->variable)
+    Key: SEMI
+    Value: r(factor->variable)
+}
+SLRUnit
+{
+    Key: RMM
+    Value: s73
+}
+SLRUnit
+{
+    Key: ASSIGN
+    Value: r(variable->ID LMM expression RMM)
+    Key: DIVIDE
+    Value: r(variable->ID LMM expression RMM)
+    Key: DOU
+    Value: r(variable->ID LMM expression RMM)
+    Key: EQ
+    Value: r(variable->ID LMM expression RMM)
+    Key: LT
+    Value: r(variable->ID LMM expression RMM)
+    Key: LTEQ
+    Value: r(variable->ID LMM expression RMM)
+    Key: MINUS
+    Value: r(variable->ID LMM expression RMM)
+    Key: MOD
+    Value: r(variable->ID LMM expression RMM)
+    Key: MULTIPLY
+    Value: r(variable->ID LMM expression RMM)
+    Key: NE
+    Value: r(variable->ID LMM expression RMM)
+    Key: PLUS
+    Value: r(variable->ID LMM expression RMM)
+    Key: RLM
+    Value: r(variable->ID LMM expression RMM)
+    Key: RMM
+    Value: r(variable->ID LMM expression RMM)
+    Key: RT
+    Value: r(variable->ID LMM expression RMM)
+    Key: RTEQ
+    Value: r(variable->ID LMM expression RMM)
+    Key: SEMI
+    Value: r(variable->ID LMM expression RMM)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(mulop->DIVIDE)
+    Key: LLM
+    Value: r(mulop->DIVIDE)
+    Key: NUMBER
+    Value: r(mulop->DIVIDE)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(mulop->MOD)
+    Key: LLM
+    Value: r(mulop->MOD)
+    Key: NUMBER
+    Value: r(mulop->MOD)
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(mulop->MULTIPLY)
+    Key: LLM
+    Value: r(mulop->MULTIPLY)
+    Key: NUMBER
+    Value: r(mulop->MULTIPLY)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s69
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: call
+    Value: 38
+    Key: factor
+    Value: 78
+    Key: variable
+    Value: 71
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: r(term->term mulop factor)
+    Key: DOU
+    Value: r(term->term mulop factor)
+    Key: EQ
+    Value: r(term->term mulop factor)
+    Key: LT
+    Value: r(term->term mulop factor)
+    Key: LTEQ
+    Value: r(term->term mulop factor)
+    Key: MINUS
+    Value: r(term->term mulop factor)
+    Key: MOD
+    Value: r(term->term mulop factor)
+    Key: MULTIPLY
+    Value: r(term->term mulop factor)
+    Key: NE
+    Value: r(term->term mulop factor)
+    Key: PLUS
+    Value: r(term->term mulop factor)
+    Key: RLM
+    Value: r(term->term mulop factor)
+    Key: RMM
+    Value: r(term->term mulop factor)
+    Key: RT
+    Value: r(term->term mulop factor)
+    Key: RTEQ
+    Value: r(term->term mulop factor)
+    Key: SEMI
+    Value: r(term->term mulop factor)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 80
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(expression->variable ASSIGN expression)
+    Key: RLM
+    Value: r(expression->variable ASSIGN expression)
+    Key: RMM
+    Value: r(expression->variable ASSIGN expression)
+    Key: SEMI
+    Value: r(expression->variable ASSIGN expression)
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(simple-expression->additive-expression relop additive-expression)
+    Key: MINUS
+    Value: s62
+    Key: PLUS
+    Value: s64
+    Key: RLM
+    Value: r(simple-expression->additive-expression relop additive-expression)
+    Key: RMM
+    Value: r(simple-expression->additive-expression relop additive-expression)
+    Key: SEMI
+    Value: r(simple-expression->additive-expression relop additive-expression)
+    Key: addop
+    Value: 67
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: r(factor->LLM expression RLM)
+    Key: DOU
+    Value: r(factor->LLM expression RLM)
+    Key: EQ
+    Value: r(factor->LLM expression RLM)
+    Key: LT
+    Value: r(factor->LLM expression RLM)
+    Key: LTEQ
+    Value: r(factor->LLM expression RLM)
+    Key: MINUS
+    Value: r(factor->LLM expression RLM)
+    Key: MOD
+    Value: r(factor->LLM expression RLM)
+    Key: MULTIPLY
+    Value: r(factor->LLM expression RLM)
+    Key: NE
+    Value: r(factor->LLM expression RLM)
+    Key: PLUS
+    Value: r(factor->LLM expression RLM)
+    Key: RLM
+    Value: r(factor->LLM expression RLM)
+    Key: RMM
+    Value: r(factor->LLM expression RLM)
+    Key: RT
+    Value: r(factor->LLM expression RLM)
+    Key: RTEQ
+    Value: r(factor->LLM expression RLM)
+    Key: SEMI
+    Value: r(factor->LLM expression RLM)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 84
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: DOU
+    Value: r(argument-list->argument-list DOU expression)
+    Key: RLM
+    Value: r(argument-list->argument-list DOU expression)
+}
+SLRUnit
+{
+    Key: DIVIDE
+    Value: r(call->ID LLM arguments RLM)
+    Key: DOU
+    Value: r(call->ID LLM arguments RLM)
+    Key: EQ
+    Value: r(call->ID LLM arguments RLM)
+    Key: LT
+    Value: r(call->ID LLM arguments RLM)
+    Key: LTEQ
+    Value: r(call->ID LLM arguments RLM)
+    Key: MINUS
+    Value: r(call->ID LLM arguments RLM)
+    Key: MOD
+    Value: r(call->ID LLM arguments RLM)
+    Key: MULTIPLY
+    Value: r(call->ID LLM arguments RLM)
+    Key: NE
+    Value: r(call->ID LLM arguments RLM)
+    Key: PLUS
+    Value: r(call->ID LLM arguments RLM)
+    Key: RLM
+    Value: r(call->ID LLM arguments RLM)
+    Key: RMM
+    Value: r(call->ID LLM arguments RLM)
+    Key: RT
+    Value: r(call->ID LLM arguments RLM)
+    Key: RTEQ
+    Value: r(call->ID LLM arguments RLM)
+    Key: SEMI
+    Value: r(call->ID LLM arguments RLM)
+}
+SLRUnit
+{
+    Key: while
+    Value: s97
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(expression-stmt->expression SEMI)
+    Key: LBM
+    Value: r(expression-stmt->expression SEMI)
+    Key: LLM
+    Value: r(expression-stmt->expression SEMI)
+    Key: NUMBER
+    Value: r(expression-stmt->expression SEMI)
+    Key: RBM
+    Value: r(expression-stmt->expression SEMI)
+    Key: SEMI
+    Value: r(expression-stmt->expression SEMI)
+    Key: do
+    Value: r(expression-stmt->expression SEMI)
+    Key: else
+    Value: r(expression-stmt->expression SEMI)
+    Key: if
+    Value: r(expression-stmt->expression SEMI)
+    Key: return
+    Value: r(expression-stmt->expression SEMI)
+    Key: while
+    Value: r(expression-stmt->expression SEMI)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 89
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: RLM
+    Value: s90
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LBM
+    Value: s26
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: SEMI
+    Value: s36
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: compound-stmt
+    Value: 39
+    Key: condition-stmt
+    Value: 40
+    Key: do
+    Value: s41
+    Key: dowhile-stmt
+    Value: 42
+    Key: expression
+    Value: 43
+    Key: expression-stmt
+    Value: 44
+    Key: factor
+    Value: 45
+    Key: if
+    Value: s46
+    Key: return
+    Value: s47
+    Key: return-stmt
+    Value: 48
+    Key: simple-expression
+    Value: 49
+    Key: statement
+    Value: 91
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: else
+    Value: s95
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(return-stmt->return SEMI)
+    Key: LBM
+    Value: r(return-stmt->return SEMI)
+    Key: LLM
+    Value: r(return-stmt->return SEMI)
+    Key: NUMBER
+    Value: r(return-stmt->return SEMI)
+    Key: RBM
+    Value: r(return-stmt->return SEMI)
+    Key: SEMI
+    Value: r(return-stmt->return SEMI)
+    Key: do
+    Value: r(return-stmt->return SEMI)
+    Key: else
+    Value: r(return-stmt->return SEMI)
+    Key: if
+    Value: r(return-stmt->return SEMI)
+    Key: return
+    Value: r(return-stmt->return SEMI)
+    Key: while
+    Value: r(return-stmt->return SEMI)
+}
+SLRUnit
+{
+    Key: SEMI
+    Value: s94
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(return-stmt->return expression SEMI)
+    Key: LBM
+    Value: r(return-stmt->return expression SEMI)
+    Key: LLM
+    Value: r(return-stmt->return expression SEMI)
+    Key: NUMBER
+    Value: r(return-stmt->return expression SEMI)
+    Key: RBM
+    Value: r(return-stmt->return expression SEMI)
+    Key: SEMI
+    Value: r(return-stmt->return expression SEMI)
+    Key: do
+    Value: r(return-stmt->return expression SEMI)
+    Key: else
+    Value: r(return-stmt->return expression SEMI)
+    Key: if
+    Value: r(return-stmt->return expression SEMI)
+    Key: return
+    Value: r(return-stmt->return expression SEMI)
+    Key: while
+    Value: r(return-stmt->return expression SEMI)
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LBM
+    Value: s26
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: SEMI
+    Value: s36
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: compound-stmt
+    Value: 39
+    Key: condition-stmt
+    Value: 40
+    Key: do
+    Value: s41
+    Key: dowhile-stmt
+    Value: 42
+    Key: expression
+    Value: 43
+    Key: expression-stmt
+    Value: 44
+    Key: factor
+    Value: 45
+    Key: if
+    Value: s46
+    Key: return
+    Value: s47
+    Key: return-stmt
+    Value: 48
+    Key: simple-expression
+    Value: 49
+    Key: statement
+    Value: 96
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: LBM
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: LLM
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: NUMBER
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: RBM
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: SEMI
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: do
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: else
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: if
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: return
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+    Key: while
+    Value: r(condition-stmt->if LLM expression RLM statement else statement)
+}
+SLRUnit
+{
+    Key: LLM
+    Value: s98
+}
+SLRUnit
+{
+    Key: ID
+    Value: s32
+    Key: LLM
+    Value: s33
+    Key: NUMBER
+    Value: s34
+    Key: additive-expression
+    Value: 37
+    Key: call
+    Value: 38
+    Key: expression
+    Value: 99
+    Key: factor
+    Value: 45
+    Key: simple-expression
+    Value: 49
+    Key: term
+    Value: 51
+    Key: variable
+    Value: 52
+}
+SLRUnit
+{
+    Key: RLM
+    Value: s100
+}
+SLRUnit
+{
+    Key: SEMI
+    Value: s101
+}
+SLRUnit
+{
+    Key: ID
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: LBM
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: LLM
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: NUMBER
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: RBM
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: SEMI
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: do
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: else
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: if
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: return
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+    Key: while
+    Value: r(dowhile-stmt->do statement while LLM expression RLM SEMI)
+}
+SLRUnit
+{
+    Key: LMM
+    Value: s13
+    Key: SEMI
+    Value: s14
+}
+SLRUnit
+{
+    Key: RMM
+    Value: s104
+}
+SLRUnit
+{
+    Key: SEMI
+    Value: s105
+}
+SLRUnit
+{
+    Key: $
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: ID
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: LBM
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: LLM
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: NUMBER
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: RBM
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: SEMI
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: do
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: double
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: float
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: if
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: int
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: return
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+    Key: void
+    Value: r(variable-definition->type-indicator ID LMM NUMBER RMM SEMI)
+}

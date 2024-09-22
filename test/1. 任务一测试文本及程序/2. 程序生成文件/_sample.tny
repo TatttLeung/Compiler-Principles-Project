@@ -1,0 +1,30 @@
+read xXx; {read和标识符判断}
+if ( xXx < yYy )  then {if和<判断}
+	repeat{repeat判断}
+		xXx := (xXx + 1) * 1 - 0 /1{+-*/的判断}
+	until xXx = yYy{until和=判断}
+else{else判断}
+	write 001+123 % 2{%和write、数字的判断}
+end;{end判断}
+read z1;
+{各种符号判断}
+if z1 <= 1000 then
+	z1 := 0
+else
+	z1 := 1
+end;
+if z1 <> 1000 then
+	z1 := 0
+else
+	z1 := 1
+end;
+if z1 >= 1000 then
+	z1 := 0
+else
+	z1 := 1
+end;
+if z1 > 1000 then
+	z1 := 0
+else
+	z1 := 1
+end
